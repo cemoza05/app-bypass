@@ -89,7 +89,7 @@ else
 <body bgcolor="black" text="blue">
     <center>
         <pre><img src="https://imgur.com/48YgDZL.png" width="250" height="250" /></pre>
-        <button id="showButton" onclick="togglePasswordForm()">Enter Password</button>
+        <button id="showButton" onclick="togglePasswordForm()">t.me/SomsakKittisak</button>
         <form id="passwordForm" action="" method="POST">
             <label for="password"></label> 
             <input id="password" name="password" type="password">
