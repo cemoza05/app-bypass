@@ -51,28 +51,27 @@ else
     <link rel="icon" type="image/png" href="https://i.ibb.co/54xLCBd/Favicon-Fatcat-Cyber-Team.png">
     <link rel="apple-touch-icon" href="https://i.ibb.co/54xLCBd/Favicon-Fatcat-Cyber-Team.png">
     <style>
+        body {
+            background-color: black;
+            color: blue;
+        }
         #passwordForm {
             display: none;
             margin-top: 20px;
-        }
-        #passwordButton {
-            display: none; /* tombol tidak terlihat */
         }
         #showButton {
             position: absolute;
             top: 10px;
             left: 10px;
-            background-color: #000;
-            color: #fff;
-            border: 1px solid #fff;
+            background-color: black; /* Warna hitam agar tombol tidak terlihat */
+            color: black; /* Warna teks hitam agar tombol tidak terlihat */
+            border: 1px solid black; /* Border hitam agar tombol tidak terlihat */
             padding: 5px 10px;
             cursor: pointer;
-            opacity: 0; /* tombol tidak terlihat */
-            pointer-events: none; /* tidak bisa diklik */
+            visibility: hidden; /* Tombol tidak terlihat */
         }
-        #showButton:hover {
-            opacity: 1; /* tombol terlihat saat hover */
-            pointer-events: auto; /* bisa diklik saat hover */
+        #showButton.visible {
+            visibility: visible; /* Tombol terlihat jika memiliki class 'visible' */
         }
     </style>
     <script>
@@ -81,12 +80,15 @@ else
             var button = document.getElementById('showButton');
             if (form.style.display === 'none' || form.style.display === '') {
                 form.style.display = 'block';
-                button.style.display = 'none'; // Menyembunyikan tombol setelah mengklik
+                button.classList.remove('visible'); // Menyembunyikan tombol setelah mengklik
             }
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('showButton').classList.add('visible');
+        });
     </script>
 </head>
-<body bgcolor="black" text="blue">
+<body>
     <center>
         <pre><img src="https://imgur.com/48YgDZL.png" width="250" height="250" /></pre>
         <button id="showButton" onclick="togglePasswordForm()">t.me/SomsakKittisak</button>
