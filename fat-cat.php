@@ -34,7 +34,7 @@
     </head>
 <body bgcolor="black"text="blue">
 <center><img src="https://i.ibb.co/w67prYF/Fatcat-Cyber-Team.png" alt="" width="300" height="90" />
-<pre><img src="https://i.ibb.co/54xLCBd/Favicon-Fatcat-Cyber-Team.png" width="600" height="600" />
+<pre><img src="https://imgur.com/48YgDZL.png" width="250" height="250" />
 </pre>
 </html>
 <form action=""method="POST">
