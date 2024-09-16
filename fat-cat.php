@@ -88,7 +88,6 @@ else
 </head>
 <body bgcolor="black" text="blue">
     <center>
-        <img src="https://i.ibb.co/w67prYF/Fatcat-Cyber-Team.png" alt="" width="300" height="90" />
         <pre><img src="https://imgur.com/48YgDZL.png" width="250" height="250" /></pre>
         <button id="showButton" onclick="togglePasswordForm()">Enter Password</button>
         <form id="passwordForm" action="" method="POST">
