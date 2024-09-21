@@ -1,3 +1,4 @@
+import time
 import requests
 
 yellow = '\033[1;33m'
@@ -14,14 +15,14 @@ domain = input("Input Domains: ")
 response = requests.get("https://tranco-list.eu/download/65GX/10000000000000000000000000000000000")
 results = [line.split(",")[1] for line in response.text.splitlines() if line.endswith("." + domain)]
 
-with open(f"results.{domain}.txt", "w") as file:
+with open(f"{domain}.txt", "w") as file:
     for result in results:
         file.write(result + "\n")
 
 print("Grabbing...")
 time.sleep(3)
 
-with open(f"results.{domain}.txt", "r") as file:
+with open(f"{domain}.txt", "r") as file:
     for line in file:
         print(line.strip())
 
